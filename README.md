@@ -3,7 +3,7 @@ To try new Terraform module to create/update secrets at Vault
 
 ## How to test locally
 
-To try Keycloak out, just execute:
+To try Vault out, just execute:
 
 ```sh
 docker-compose -f vault.yml up -d
