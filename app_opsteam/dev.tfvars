@@ -1,5 +1,4 @@
 secret_path = "secret/dev"
-#secret_id = "secret/dev"
 
 secrets = {
   "pizza"   = "cheese",
