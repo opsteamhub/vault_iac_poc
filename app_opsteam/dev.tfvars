@@ -1,4 +1,4 @@
-secret_path = "secret/dev"
+secret_path = "dev"
 
 secrets = {
   "pizza"   = "cheese",

@@ -1,4 +1,4 @@
-secret_path = "secret/prod"
+secret_path = "prod"
 
 secrets = {
   "canelone"   = "cheese",
