@@ -4,6 +4,6 @@ variable "secret_path" {
 }
 
 variable "secrets" {
-    description = "The list of Secrets"
-    type = map(string)
+  description = "The list of Secrets"
+  type        = map(string)
 }

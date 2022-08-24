@@ -1,7 +1,7 @@
 terraform {
-    required_providers {
-        vault = {
-            source = "hashicorp/vault"
-        }
+  required_providers {
+    vault = {
+      source = "hashicorp/vault"
     }
+  }
 }

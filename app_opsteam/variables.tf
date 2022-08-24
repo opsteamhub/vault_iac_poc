@@ -1,8 +1,3 @@
-#variable "secret_id" {
-#  description = "The Secret ID"
-#  type        = string
-#}
-
 variable "secret_path" {
   description = "The Secret Path"
   type        = string
