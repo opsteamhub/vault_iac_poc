@@ -7,4 +7,4 @@ secrets = {
     "coxinha"="flango",
 }
 
-# export TFVARS_FILE="test.tfvars" && terraform apply -var-file=${TFVARS_FILE}
+# export TFVARS_FILE="../test.tfvars" && terraform apply -var-file=${TFVARS_FILE}
