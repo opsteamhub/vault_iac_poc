@@ -1,10 +1,12 @@
-secret_path = "prod"
+engine_path = "prod"
+
+secret_path = "k8s"
 
 secrets = {
-  "canelone" = "cheese",
-  "calzone"  = "calabreza",
-  "pastel"   = "palmito",
-  "quibe"    = "carne",
+  "pizza"   = "cheese",
+  "pizza2"  = "calabreza",
+  "pastel"  = "palmito",
+  "coxinha" = "flango",
 }
 
-# rm -rf .terraform/ && rm -rf .terraform.lock.hcl && terraform init && export TFVARS_FILE="prod.tfvars" && terraform apply -var-file=${TFVARS_FILE}
+# rm -rf .terraform/ && rm -rf .terraform.lock.hcl && terraform init && export TFVARS_FILE="dev.tfvars" && terraform apply -var-file=${TFVARS_FILE}

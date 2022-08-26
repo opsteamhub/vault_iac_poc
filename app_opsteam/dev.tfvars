@@ -1,4 +1,6 @@
-secret_path = "dev"
+engine_path = "dev"
+
+secret_path = "k8s"
 
 secrets = {
   "pizza"   = "cheese",
