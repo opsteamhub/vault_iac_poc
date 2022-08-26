@@ -1,4 +1,7 @@
 resource "vault_generic_secret" "secret" {
-  path      = "${var.secret_path}"
-  data_json = jsonencode(var.secrets)
+  for_each = var.secrets
+  path = "${each.key}"
+  data_json = jsonencode(
+    each.value
+    )
 }
