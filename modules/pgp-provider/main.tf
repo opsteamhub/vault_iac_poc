@@ -4,8 +4,12 @@ resource "pgp_key" "testing" {
   comment = "testing"
 }
 
+data "local_file" "filename" {
+  filename = "${path.module}/${var.filename}"
+}
+
 data "pgp_encrypt" "testing" {
-  plaintext  = "thisisasecret"
+  plaintext = data.local_file.filename.content
   public_key = pgp_key.testing.public_key
 }
 
