@@ -1,4 +1,7 @@
 filename="test.txt"
+private_key = "private.key"
+public_key = "public.key"
+filename_output = "output.txt"
 
 
 
