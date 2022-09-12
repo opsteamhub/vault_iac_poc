@@ -1,0 +1,10 @@
+arquivo_de_teste {
+    contem = testeeeeeeeeeee
+}
+arquivo_de_testesdasdasd
+
+
+asdasdasdasd
+
+
+asdasdasdsad

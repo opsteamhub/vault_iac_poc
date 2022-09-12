@@ -1,3 +1,0 @@
-arquivo_de_teste {
-    contem = teste
-}

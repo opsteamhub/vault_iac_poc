@@ -3,11 +3,6 @@ variable "filename" {
   description = "Name of file to be encrypted"
 }
 
-variable "private_key" {
-  type = string
-  description = "Private key"
-}
-
 variable "public_key" {
   type = string
   description = "Public key"
