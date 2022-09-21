@@ -25,6 +25,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        working-directory: modules/pgp-provider-encrypt/
 
     steps:
     # Checkout the repository to the GitHub Actions runner
@@ -47,7 +48,6 @@ jobs:
       run: "echo  The Secret Content is: ${{ inputs.secret_content}}"
     - name: Terraform Init
       run: |
-        cd modules/pgp-provider-encrypt/
         terraform init -input=false
     - name: Where am I
       run: pwd
