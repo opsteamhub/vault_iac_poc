@@ -26,6 +26,7 @@ jobs:
       run:
         shell: bash
 
+    if:  ${{ inputs.secret_content_file }} # --> Check if secret content is empty
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
@@ -39,7 +40,7 @@ jobs:
         sudo apt update && sudo apt install terraform
     - name: Terraform Version
       run: terraform --version
-    - name: Where i am
+    - name: Where am I
       run: pwd
     - name: List Files
       run: ls -la
