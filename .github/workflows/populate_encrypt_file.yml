@@ -74,6 +74,8 @@ jobs:
       run: ls -la
     - name: Git Add/Commit/Push new files
       run: |
+        git config --global user.email "bruno.novo@ops.team"
+        git config --global user.name "Bruno Novo"
         git add . && \
         git commit -m "Adding new encrypted files" && \
         git push origin main
