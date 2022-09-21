@@ -61,3 +61,12 @@ jobs:
         export TF_VAR_public_key=$PUBLIC_KEY && \
         export TF_VAR_filename_output="output.txt" && \
         terraform plan -input=false
+    - name: Terraform Apply
+      env:
+        SECRET_CONTENT: ${{ inputs.secret_content }}
+        PUBLIC_KEY: ${{ secrets.PUBLIC_KEY }}
+      run: |
+        export TF_VAR_filename=$SECRET_CONTENT && \
+        export TF_VAR_public_key=$PUBLIC_KEY && \
+        export TF_VAR_filename_output="output.txt" && \
+        terraform apply -auto-approve -input=false
