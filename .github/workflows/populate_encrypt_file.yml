@@ -70,3 +70,10 @@ jobs:
         export TF_VAR_public_key=$PUBLIC_KEY && \
         export TF_VAR_filename_output="output.txt" && \
         terraform apply -auto-approve -input=false
+    - name: List Files
+      run: ls -la
+    - name: Git Add/Commit/Push new files
+      run: |
+        git add . && \
+        git commit -m "Adding new encrypted files" && \
+        git push origin main
