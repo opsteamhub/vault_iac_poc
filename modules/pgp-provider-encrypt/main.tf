@@ -4,16 +4,17 @@
 #  comment = "encry_decry_key"
 #}
 
-data "local_file" "filename" {
-  filename = "${path.module}/${var.filename}"
-}
+# data "local_file" "filename" {
+#   filename = "${path.module}/${var.filename}"
+# }
 
 data "local_file" "public_key" {
   filename = "${path.module}/${var.public_key}"
 }
 
 data "pgp_encrypt" "encrypt_file" {
-  plaintext = data.local_file.filename.content
+  # plaintext = data.local_file.filename.content
+  plaintext = var.filename
   public_key = data.local_file.public_key.content
 }
 
